@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Generate Morse</title>
+</head>
+
+<body>
+    <main class="main-screen">
+        <div class="generator-box">
+            <form onsubmit="return submitForm(event)" id="content-form">
+                <textarea class="input-form" id="text" name="text" rows="6" cols="50"></textarea>
+                <div class="cta-box">
+                    <button id="submit-form" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="./morse.js"></script>
+<script src="./main.js"></script>

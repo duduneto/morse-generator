@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-screen {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#100A32, #372556);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.generator-box {
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.input-form {
+    outline: #c4c4c4;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.cta-box {
+    margin-top: 2rem;
+}
