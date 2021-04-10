@@ -24,6 +24,10 @@
             <form onsubmit="return submitForm(event)" id="content-form">
                 <textarea class="input-form" id="text" name="text" rows="6" cols="50"></textarea>
                 <div class="cta-box">
+                    <div class="speed-container">
+                        <label for="speed">Speed <span id="feedback-speed">400</span><span>ms</span></label>
+                        <input id="speed" type="range" min="200" max="1000" value="400" />
+                    </div>
                     <button id="stop-form" type="button" class="btn" disabled="true">Stop</button>
                     <button id="submit-form" class="btn primary-btn" type="submit" disabled="true">Enviar</button>
                 </div>

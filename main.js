@@ -1,5 +1,5 @@
 var timeRead = 400;
-var shortTimeRead = 175;
+var shortTimeRead = timeRead - 25;
 var titleTypingSpeed = 75;
 var titleTypingPause = 500;
 var counterTitleLoop = 0;
@@ -80,6 +80,10 @@ document.getElementById('stop-form').addEventListener('click', () => {
     stopAudio();
 })
 
+document.querySelector('#speed').addEventListener('input', (e) => {
+    timeRead = e.target.value;
+    document.querySelector('#feedback-speed').innerHTML = e.target.value
+})
 
 // TYPING EFFECTS
 var TxtType = function (el, toRotate, period) {
