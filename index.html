@@ -13,11 +13,19 @@
 
 <body>
     <main class="main-screen">
-        <div class="generator-box">
+        <div class="title-generator-container">
+            <h1>
+                <span class="typewrite"
+                    data-type='[ "-- --- .-. ... . --. . -. . .-. .- - --- .-.", "Morse Generator" ]'>
+                </span>
+            </h1>
+        </div>
+        <div id="generator" class="generator-box">
             <form onsubmit="return submitForm(event)" id="content-form">
                 <textarea class="input-form" id="text" name="text" rows="6" cols="50"></textarea>
                 <div class="cta-box">
-                    <button id="submit-form" type="submit">Enviar</button>
+                    <button id="stop-form" type="button" class="btn" disabled="true">Stop</button>
+                    <button id="submit-form" class="btn primary-btn" type="submit" disabled="true">Enviar</button>
                 </div>
             </form>
         </div>
